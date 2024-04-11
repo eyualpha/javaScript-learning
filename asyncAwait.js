@@ -59,16 +59,19 @@
 // }
 // reading("text.txt");
 
+const promise = new Promise((resolve, rejects) => {
+  function change(array) {
+    for (let index = 0; index < array.length; index++) {
+      array[index] = array[index] * 2;
+    }
+    resolve(array);
+  }
+  change();
+});
+
 x = [1, 2, 3];
 async function transform(array) {
   try {
-    function change() {
-      for (let index = 0; index < array.length; index++) {
-        array[index] = array[index] * 2;
-      }
-      console.log(array);
-    }
-
     await change();
   } catch (err) {
     console.log(err.message);
