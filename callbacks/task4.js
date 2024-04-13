@@ -1,11 +1,10 @@
-x = [10, 2, 3];
+arr = [1, 2, 3, 4, 5];
+
 function transform(arr, callback) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = callback(arr[i]);
-  }
-  console.log(arr);
+  const newArr = arr.map(callback);
+  console.log(newArr);
 }
 function twice(x) {
   return x * 2;
 }
-transform(x, twice);
+transform(arr, twice);
