@@ -12,3 +12,4 @@ wait(2000)
   .catch((e) => {
     console.log(e.message);
   });
+module.exports = { wait };
