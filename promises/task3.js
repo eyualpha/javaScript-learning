@@ -12,3 +12,4 @@ failsAfter(2000)
   .catch((err) => {
     console.error(err.message);
   });
+module.exports = { failsAfter };
