@@ -1,8 +1,8 @@
-function failsAfter(x) {
+function failsAfter(seconds) {
   return new Promise((resolve, rejects) => {
     setTimeout(() => {
       rejects(new Error("failed"));
-    }, x);
+    }, seconds);
   });
 }
 failsAfter(2000)
