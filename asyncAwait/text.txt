@@ -1,0 +1,2 @@
+File Reading 
+Write a function that reads a text file using Node.js fs module. The function should take a file path and a callback function as parameters. Once the file is read, the callback function should be invoked with the contents of the file as its argument.
